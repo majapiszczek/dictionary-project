@@ -8,17 +8,19 @@ export default function Results(props) {
       <div className="Results">
         <section className="main">
           <h2>{props.definition.word}</h2>
-          <p>{props.definition.phonetic}</p>
+          <p>/{props.definition.phonetic}/</p>
         </section>
-        <section className="definition">
+        <div>
           {props.definition.meanings.map(function (meaning, index) {
             return (
-              <p key={index}>
-                <Meaning meaning={meaning} />
-              </p>
+              <section className="definition" key={index}>
+                <p>
+                  <Meaning meaning={meaning} />
+                </p>
+              </section>
             );
           })}
-        </section>
+        </div>
       </div>
     );
   } else {

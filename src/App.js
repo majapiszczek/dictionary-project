@@ -17,7 +17,7 @@ function App() {
       <footer className="text-center mt-4">
         Coded by Maja Piszczek,{" "}
         <a
-          href="https://github.com/majapiszczek/dictionary"
+          href="https://github.com/majapiszczek/dictionary-project"
           target="_blank"
           rel="noreferrer"
         >
